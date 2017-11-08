@@ -9,7 +9,10 @@ export default ({collapsed}) => {
            <div className="user_page logo sider" style={{padding: '10px', textAlign: 'center', background: '#002e5a'}}>
              <a href='/' >
                <img src="https://gw.alipayobjects.com/zos/rmsportal/iwWyPinUoseUxIAeElSx.svg" alt="logo"  style={{verticalAlign: 'middle'}}/>
-               <h1 style={{ display: collapsed ? 'none':'inline-block', color: '#fff'}}>
+               <h1 style={{ visibility: collapsed ? 'hidden':'visible',
+                            opacity: collapsed ? 0:1,
+                            color: '#fff',
+                            display: 'inline-block'}}>
                  Logo
                </h1>
              </a>

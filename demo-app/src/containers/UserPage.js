@@ -5,13 +5,14 @@ import { Redirect } from 'react-router';
 import $ from 'jquery';
 import SiderMenu from '../components/UserPageSiderMenu';
 import Header from '../components/UserPageHeader';
-import Body from '../components/UserPageBody'
+import Body from '../components/UserPageBody';
 
 const { Content, Sider, Footer } = Layout;
 
 class UserPage extends Component{
   state = {
-    collapsed: false
+    collapsed: false,
+    screenSize: 600
   };
   toggle = () => {
     this.setState({
@@ -19,15 +20,16 @@ class UserPage extends Component{
     });
   }
   componentDidMount(){
+    this.updateDimensions()
     window.addEventListener("resize", this.updateDimensions.bind(this));
 
   }
   updateDimensions(){
     const screenSize = $(window).width()
     if(screenSize < 600){
-      this.setState({collapsed: true})
+      this.setState({collapsed: true, screenSize})
     }else{
-      this.setState({collapsed: false})
+      this.setState({ screenSize })
     }
   }
   render() {
@@ -46,7 +48,7 @@ class UserPage extends Component{
                  <SiderMenu collapsed={collapsed}/>
               </Sider>
               <Layout>
-                <Header collapsed={collapsed} toggle={this.toggle}/>
+                <Header collapsed={collapsed} screenSize={screenSize} toggle={this.toggle}/>
                   <Body />
                 <Footer style={{ textAlign: 'center' }}>
                   Prototype ©2016 Created by Ant UED

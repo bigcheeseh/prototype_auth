@@ -21,7 +21,7 @@ class UserPageHeader extends Component{
   }
 
   render(){
-      const { collapsed, toggle, loginRes } = this.props
+      const { collapsed, screenSize, toggle, loginRes } = this.props
 
       const menu = (
          <Menu onClick={this.handleMenuClick}>
@@ -37,6 +37,7 @@ class UserPageHeader extends Component{
              className="user_page trigger"
              type={collapsed  ? 'menu-unfold' : 'menu-fold'}
              onClick={toggle}
+             style={{display: screenSize > 600 ? 'inline-block' : 'none'}}
            />
           <div className="user_page user-personal-menu" style={{ right: 0}}>
 
