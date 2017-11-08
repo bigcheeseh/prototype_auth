@@ -9,6 +9,7 @@ class UserPageHeader extends Component{
   state = {
     visible: false,
   };
+
   handleMenuClick = (e) => {
     if (e.key === '3') {
       this.setState({ visible: false });
@@ -34,7 +35,7 @@ class UserPageHeader extends Component{
          <Header style={{background:'#fff', boxShadow: '0 1px 1px #000'}} className="user_page header">
            <Icon
              className="user_page trigger"
-             type={collapsed ? 'menu-unfold' : 'menu-fold'}
+             type={collapsed  ? 'menu-unfold' : 'menu-fold'}
              onClick={toggle}
            />
           <div className="user_page user-personal-menu" style={{ right: 0}}>

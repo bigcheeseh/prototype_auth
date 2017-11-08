@@ -11,6 +11,7 @@
     "ant-design-pro": "^0.2.2-rc.1",
     "antd": "^2.13.8",
     "axios": "^0.17.0",
+    "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
