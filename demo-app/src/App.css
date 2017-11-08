@@ -1,0 +1,96 @@
+@import '~antd/dist/antd.css';
+
+.login-form {
+  max-width: 650px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.auth_header {
+  text-align: center;
+  padding: 20px;
+}
+
+.auth.icon {
+  vertical-align: middle;
+  padding: 3px;
+}
+
+.auth.link {
+  padding: 10px;
+}
+
+.user_page.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.user_page.trigger:hover {
+  color: #108ee9;
+}
+
+.user_page.logo {
+  height: 64px;
+  box-shadow: 0 1px 1px #000;
+  z-index: 3;
+  position: relative;
+  background: #002140;
+}
+.user_page.header {
+  z-index: 1;
+}
+
+.user_page.user-personal-menu{
+  display: inline-block;
+  position: absolute;
+  padding: 0 2% 0 2%;
+  height: inherit;
+}
+
+.user_page.user-avatar{
+  vertical-align: middle;
+
+}
+.user_page.ant-dropdown-link{
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+.user_page.user-personal-menu:hover{
+  background: #e1f2f1;
+}
+
+.user_page.header {
+  box-shadow: 2px 2px 3px #000;
+}
+
+.user_page.sider {
+  background: #002140;
+}
+
+.user_page.main.sider{
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 1px 5px rgba(0,0,0,1);
+  background: #002140
+}
+
+.user_page.logo.sider h1{
+  margin: 0 25px;
+  vertical-align: middle;
+}
+.user_page.menu.option{
+  background: #001427;
+}
+
+.user_page.menu.option:hover{
+  background: #001427;
+  color: white !important;
+}
